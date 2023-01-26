@@ -6,8 +6,8 @@
     <title>A First App</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="app.js"></script>
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header>
@@ -15,8 +15,7 @@
     </header>
     <section id="user-goal">
       <h2>My Course Goal</h2>
-      <p></p>
+      <p>{{ courseGoal }}</p>
     </section>
-    
   </body>
 </html>
