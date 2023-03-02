@@ -22,8 +22,11 @@
       <button v-on:click="pressedButton">Show Alert</button>
       <hr />
       <!-- 2) Register the user input on "keydown" and output it in the paragraph (hint: event.target.value helps) -->
-      <input type="text" />
-      <p>OUTPUT</p>
+      <input 
+        type="text" 
+        v-on:keydown = "confirmedInput($event, 'Team')"
+      />
+      <p>OUTPUT: {{ soccerTeam }}</p>
       <hr />
       <!-- 3) Repeat 2) but only output the entered value if the ENTER key was pressed -->
       <input type="text" />
