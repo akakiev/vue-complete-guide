@@ -29,8 +29,11 @@
       <p>OUTPUT: {{ soccerTeam }}</p>
       <hr />
       <!-- 3) Repeat 2) but only output the entered value if the ENTER key was pressed -->
-      <input type="text" />
-      <p>OUTPUT</p>
+      <input 
+        type="text"
+        v-on:keyup.enter = "submittedInput"
+      />
+      <p>OUTPUT: {{ submittedSoccerTeam }}</p>
     </section>
   </body>
 </html>
