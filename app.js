@@ -7,6 +7,12 @@ const app = Vue.createApp({
     };
   },
   methods: {
+    outputFullName(){
+      if (this.name === ''){
+        return '';
+      }
+      return this.name + ' ' + 'Baraban';
+    },
     submitForm(event){
       //event.preventDefault();
       alert('Submitted!');
