@@ -23,6 +23,10 @@
         type="text" 
         v-model="name"
       >
+      <input 
+        type="text" 
+        v-model="lastname"
+      >
       <button v-on:click="resetInput">Reset Input</button>
       <p>Yor name: {{ fullname }}</p>
       <form v-on:submit.prevent="submitForm">
